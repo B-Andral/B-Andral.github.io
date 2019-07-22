@@ -87,7 +87,7 @@ h2, h1{
 @media only screen and (max-width: 760px)
 {
 .and{
-  font-size: 40px;
+  font-size: 20px;
   letter-spacing: 20px;
 }
 }
@@ -164,13 +164,26 @@ h2, h1{
   }
 }
 
-#glasses{
+.glasses{
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   overflow: hidden;
 /*  z-index: -1;*/
+}
+
+.imgsp{
+    background-image: url(img/nomouse.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 25%;
+    left: 50%;
+  overflow: hidden;
+    transform: translateX(-50%);
 }
 
 /************************************ folio ************************************/
