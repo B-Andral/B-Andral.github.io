@@ -8,14 +8,14 @@ body {
 
 @font-face {
  font-family: "BasierSquare";
- src: url("/wp-content/themes/andralb/fonts/basiersquare-regular-webfont.woff2") format("woff2"),
-        url("/wp-content/themes/andralb/fonts/basiersquare-regular-webfont.woff") format("woff");
+ src: url("/fonts/basiersquare-regular-webfont.woff2") format("woff2"),
+        url("/fonts/basiersquare-regular-webfont.woff") format("woff");
 }
 
 @font-face {
  font-family: "ANDRAL";
- src: url("/wp-content/themes/andralb/fonts/ADL-TITRE-MarkI.woff2") format("woff2"),
-        url("/wp-content/themes/andralb/fonts/ADL-TITRE-MarkI.woff") format("woff");
+ src: url("/fonts/ADL-TITRE-MarkI.woff2") format("woff2"),
+        url("/fonts/ADL-TITRE-MarkI.woff") format("woff");
 }
 
 .wrapper {
