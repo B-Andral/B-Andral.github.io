@@ -35,7 +35,7 @@
 
 				// BEGIN Clara.io JSON loader code
 				var objectLoader = new THREE.ObjectLoader();
-				objectLoader.load("wp-content/themes/andralb/models/scene.json", function ( obj ) {
+				objectLoader.load("/models/scene.json", function ( obj ) {
 				 	scene.add( obj );
 				} );
 				// END Clara.io JSON loader code
