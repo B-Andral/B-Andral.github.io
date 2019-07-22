@@ -84,13 +84,7 @@ h2, h1{
     z-index: 1;
 }
 
-@media only screen and (max-width: 760px)
-{
-.and{
-  font-size: 20px;
-  letter-spacing: 20px;
-}
-}
+
 
 
 
@@ -113,6 +107,21 @@ h2, h1{
     position: absolute;
     z-index: 1;
 }
+
+@media only screen and (max-width: 760px)
+{
+.and{
+  font-size: 40px;
+  letter-spacing: 10px;
+    padding-left: 100%;
+}
+    
+    .sous-and{
+        padding-top: 55vh;
+    }
+}
+
+
 
 @keyframes faderin {
   0%{
@@ -177,13 +186,15 @@ h2, h1{
     background-image: url(img/nomouse.png);
     background-size: contain;
     background-repeat: no-repeat;
-    width: 50%;
-  height: 50%;
+    width: 90%;
+  height: 100%;
   position: absolute;
-  top: 25%;
+/*  top: 25%;*/
     left: 50%;
   overflow: hidden;
     transform: translateX(-50%);
+    background-position: center;
+    opacity: .5;
 }
 
 /************************************ folio ************************************/
