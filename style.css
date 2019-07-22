@@ -1,0 +1,227 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #00080b;
+    color: white;
+    overflow: hidden;
+}
+
+@font-face {
+ font-family: "BasierSquare";
+ src: url("/wp-content/themes/andralb/fonts/basiersquare-regular-webfont.woff2") format("woff2"),
+        url("/wp-content/themes/andralb/fonts/basiersquare-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+ font-family: "ANDRAL";
+ src: url("/wp-content/themes/andralb/fonts/ADL-TITRE-MarkI.woff2") format("woff2"),
+        url("/wp-content/themes/andralb/fonts/ADL-TITRE-MarkI.woff") format("woff");
+}
+
+.wrapper {
+  margin-right: auto; /* 1 */
+  margin-left:  auto; /* 1 */
+
+  max-width: 960px; /* 2 */
+}
+
+.bg-all{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(125deg, #07102E, #00080b);
+/*    background-image: linear-gradient(125deg, #07102e, #00080b 56%, #1d0404);*/
+    position: fixed;
+    z-index: -1;
+}
+
+.and .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+h2, h1{
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+/************************************ header ************************************/
+
+#my-header{
+    height: 100vh;
+    width: 100vw;
+}
+
+.cercle{
+    width: 420px;
+    height: 420px;
+    background-image: linear-gradient(315deg, #000000, #ffffff);
+    border-radius: 100%;
+    opacity: 0.05;
+    margin: 50vh 50vw;
+    position: absolute;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.and{
+    width: 100%;
+    /*text-shadow: 0 20px 40px rgba(255, 255, 255, 0.05);*/
+  font-family: 'ANDRAL', serif;
+  font-size: 80px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+    letter-spacing: 50px;
+  text-align: center;
+    /*text-transform: uppercase;*/
+    cursor: default;
+    padding-top: 45vh;
+    padding-left: calc(100% + 50px);
+    position: absolute;
+    transform: translateX(-50%);
+    color: white;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 760px)
+{
+.and{
+  font-size: 40px;
+  letter-spacing: 20px;
+}
+}
+
+
+
+.sous-and{
+    width: 100%;
+  text-shadow: 0 20px 40px rgba(255, 255, 255, 0.05);
+  font-family: BasierSquare;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  color: white;
+    /*text-transform: uppercase;*/
+    animation: 4s ease faderin;
+    cursor: default;
+    padding-top: calc(45vh + 120px);
+    position: absolute;
+    z-index: 1;
+}
+
+@keyframes faderin {
+  0%{
+    opacity: 0;
+  }
+    
+    30%{
+    opacity: 0;
+  }
+
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.need-to-scroll{
+  transform: rotate(-270deg) translateY(265%) translateX(-50%);
+  font-family: BasierSquare;
+  font-size: 8px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 5.5px;
+  text-align: center;
+  color: white;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    animation: 5s ease faderin-scroll;
+}
+
+@keyframes faderin-scroll {
+  0%{
+    opacity: 0;
+  }
+    
+    30%{
+    opacity: 0;
+        top: 80%;
+  }
+
+
+  100% {
+    opacity: 1;
+      top: 85%;
+  }
+}
+
+#glasses{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+/*  z-index: -1;*/
+}
+
+/************************************ folio ************************************/
+
+#my-folio{
+   height: 100vh;
+    width: 100vw; 
+}
+
+.big-cercle{
+    width: 720px;
+    height: 720px;
+    background-image: linear-gradient(315deg, #000000, #ffffff);
+    border-radius: 100%;
+    opacity: 0.05;
+    margin: 50vh 50vw 0 ;
+    position: absolute;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+/************************************ tempo ************************************/
+
+.rs{
+    width: 100%;
+  font-family: 'BasierSquare';
+  font-size: 9px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  color: white;
+    text-transform: lowercase;
+    animation: 4s ease faderin;
+    cursor: default;
+    padding-top: 92vh;
+    position: absolute;
+    z-index: 1;
+}
+
+.rs a{
+  text-decoration: none;
+  color: white;
+}
+
+
+@media only screen and (max-width: 760px)
+{
+.rs{
+  font-size: 10px;
+  padding-top: 75vh;
+}
+}
