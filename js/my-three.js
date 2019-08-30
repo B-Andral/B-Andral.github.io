@@ -1,4 +1,13 @@
-            var container, stats;
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+{
+    
+    var glass = document.querySelector('.glasses');
+    glass.classList.add('imgsp');
+    glass.classList.remove('glasses');
+
+}else{
+
+var container, stats;
 
 			var camera, scene, renderer;
 
@@ -14,7 +23,7 @@
 
 			function init() {
 
-				container = document.querySelector( '#glasses' );
+				container = document.querySelector( '.glasses' );
                     
 				document.body.appendChild( container );
 
@@ -93,3 +102,6 @@
 				renderer.render( scene, camera );
 
 			}
+    
+    
+    }
