@@ -184,7 +184,7 @@ h2, h1{
 }
 
 .imgsp{
-    background-image: url(img/nomouse.png);
+    background-image: url(/img/nomouse.png);
     background-size: contain;
     background-repeat: no-repeat;
     width: 90%;
